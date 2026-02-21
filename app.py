@@ -96,8 +96,8 @@ st.write("---")
 @st.cache_resource
 def load_models():
     image_model = MobileNetV2(weights="imagenet")
-    sentiment_model = pickle.load(open("model/model.pkl", "rb"))
-    vectorizer = pickle.load(open("model/vectorizer.pkl", "rb"))
+    sentiment_model = pickle.load(open("model.pkl", "rb"))
+    vectorizer = pickle.load(open("vectorizer.pkl", "rb"))
     return image_model, sentiment_model, vectorizer
 
 image_model, model, vectorizer = load_models()
@@ -331,3 +331,4 @@ if menu == "📊 Advanced Analytics":
 # =====================================================
 # FOOTER
 # =====================================================
+
