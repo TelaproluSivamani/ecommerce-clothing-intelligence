@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Specification Document</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+        h1, h2, h3, h4 { color: #0056b3; }
+        .container { width: 80%; margin: auto; padding: 20px; }
+        ul { list-style-type: disc; margin-left: 20px; }
+        code { background: #f4f4f4; padding: 2px 4px; border-radius: 4px; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        table, th, td { border: 1px solid #ccc; }
+        th, td { padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Technical Specification Document for E-commerce Clothing Intelligence</h1>
+        <h2>Project Architecture</h2>
+        <p>The project is built using a microservices architecture that splits functionalities into multiple independent services. These services communicate through APIs, allowing scalability and flexibility.</p>
+        <h3>Components</h3>
+        <ul>
+            <li>Frontend: React.js for user interface development.</li>
+            <li>Backend: Node.js and Express for REST API services.</li>
+            <li>Database: MongoDB for product and user data storage.</li>
+            <li>Machine Learning: Python with TensorFlow for prediction models.</li>
+            <li>Server: Hosted on AWS with Docker containers.</li>
+        </ul>
+        <h2>Features</h2>
+        <ul>
+            <li>User authentication and authorization.</li>
+            <li>Product catalog with filtering and search capabilities.</li>
+            <li>Shopping cart and checkout process.</li>
+            <li>Order tracking and history.</li>
+            <li>Machine learning recommendations based on user behavior.</li>
+        </ul>
+        <h2>API Endpoints</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Endpoint</th>
+                    <th>Method</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>/api/products</td><td>GET</td><td>Fetch the product list.</td></tr>
+                <tr><td>/api/products/:id</td><td>GET</td><td>Fetch product details.</td></tr>
+                <tr><td>/api/users/signup</td><td>POST</td><td>User registration.</td></tr>
+                <tr><td>/api/users/login</td><td>POST</td><td>User login.</td></tr>
+                <tr><td>/api/orders</td><td>POST</td><td>Create a new order.</td></tr>
+                <tr><td>/api/orders/:id</td><td>GET</td><td>Fetch order details.</td></tr>
+            </tbody>
+        </table>
+        <h2>Machine Learning Models</h2>
+        <p>The project utilizes several machine learning models for enhanced features:</p>
+        <ul>
+            <li><strong>Recommendation System:</strong> Collaborative filtering and content-based filtering techniques to suggest products to users.</li>
+            <li><strong>Sales Prediction:</strong> Predicts future sales using historical sales data.</li>
+        </ul>
+        <h2>Deployment Information</h2>
+        <p>The application is deployed on AWS using Docker containers managed through Kubernetes. Continuous Integration/Continuous Deployment (CI/CD) pipelines are set up using GitHub Actions.</p>
+        <h3>Steps to Deploy</h3>
+        <ol>
+            <li>Clone the repository.</li>
+            <li>Build the Docker images.</li>
+            <li>Push the images to the Docker Hub.</li>
+            <li>Apply Kubernetes configurations using <code>kubectl apply -f</code>.</li>
+        </ol>
+    </div>
+</body>
+</html>
