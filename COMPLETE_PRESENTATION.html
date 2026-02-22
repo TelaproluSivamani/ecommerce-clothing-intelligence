@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Clothing Intelligence Project Presentation</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1, h2, h3 { color: #333; }
+        pre { background-color: #f4f4f4; padding: 10px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+
+    <h1>Ecommerce Clothing Intelligence Project Presentation</h1>
+    <h2>Project Features</h2>
+    <ul>
+        <li>User Authentication and Authorization</li>
+        <li>Product Browsing and Searching</li>
+        <li>Smart Recommendations System</li>
+        <li>Shopping Cart Management</li>
+        <li>Order Processing and Tracking</li>
+    </ul>
+
+    <h2>Technical Details</h2>
+    <p>The project utilizes the following technologies:</p>
+    <ul>
+        <li><strong>Frontend:</strong> React, Redux, Bootstrap</li>
+        <li><strong>Backend:</strong> Node.js, Express</li>
+        <li><strong>Database:</strong> MongoDB</li>
+        <li><strong>Deployment:</strong> Docker, AWS</li>
+    </ul>
+
+    <h2>Architecture</h2>
+    <p>The architecture follows a microservices-based approach with the following components:</p>
+    <ul>
+        <li>Client Application (Frontend)</li>
+        <li>RESTful API (Backend)</li>
+        <li>Database Service (MongoDB)</li>
+        <li>Authentication Service</li>
+        <li>Recommendation Engine</li>
+    </ul>
+
+    <h2>API Endpoints</h2>
+    <h3>Authentication</h3>
+    <pre>
+POST /api/auth/login
+POST /api/auth/register
+GET /api/auth/logout
+    </pre>
+
+    <h3>Products</h3>
+    <pre>
+GET /api/products
+GET /api/products/:id
+POST /api/products
+PUT /api/products/:id
+DELETE /api/products/:id
+    </pre>
+
+    <h3>Orders</h3>
+    <pre>
+GET /api/orders
+POST /api/orders
+GET /api/orders/:id
+    </pre>
+
+    <h2>Deployment Information</h2>
+    <p>To deploy the project:</p>
+    <ol>
+        <li>Clone the repository.</li>
+        <li>Set up environment variables.</li>
+        <li>Run <code>docker-compose up</code> to start all services.</li>
+        <li>Access the application at <code>http://localhost:3000</code>.</li>
+    </ol>
+
+</body>
+</html>
